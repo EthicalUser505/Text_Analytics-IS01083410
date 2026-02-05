@@ -1,7 +1,7 @@
 import PyPDF2
 
 # Read the PDF file
-with open('Business_Proposal.pdf', 'rb') as file:
+with open('lab-1/Business_Proposal.pdf', 'rb') as file:
  reader = PyPDF2.PdfReader(file)
  text = "\n".join(page.extract_text() for page in reader.pages if page.extract_text())
 
